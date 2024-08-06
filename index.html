@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Design</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        Step 1: Select Door Type
+                    </div>
+                    <div class="card-body slide-container">
+                        <div class="row slide">
+                            <div class="col">
+                                <img src="./assests/asset 0.jpeg" alt="ALUMINUM FRAME" class="img-thumbnail">
+                                <p class="text-center">ALUMINUM FRAME</p>
+                            </div>
+
+                            <!-- Add other images as needed -->
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="GLOSS LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">GLOSS LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="MATTE LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">MATTE LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 3.jpeg" alt="ACRYLIC" class="img-thumbnail">
+                                <p class="text-center">ACRYLIC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 4.jpeg" alt="VENE" class="img-thumbnail">
+                                <p class="text-center">VENE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 5.jpeg" alt="LAMINATE" class="img-thumbnail">
+                                <p class="text-center">LAMINATE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 6.jpeg" alt="SOLID WOOD" class="img-thumbnail">
+                                <p class="text-center">SOLID WOOD</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 0.jpeg" alt="GLASS" class="img-thumbnail">
+                                <p class="text-center">GLASS</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="PVC" class="img-thumbnail">
+                                <p class="text-center">PVC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="STEEL" class="img-thumbnail">
+                                <p class="text-center">STEEL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-warning text-white">
+                        Step 2: Select Frame Style
+                    </div>
+
+                    <div class="mt-2 p-2 frame">
+                        <p>Frame Style : roma</p>
+                        <p>Color Frame : gold </p>
+
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary" id="select-frame">Select frame</button>
+                        <button class="btn btn-secondary" id="select-insert">Select insert</button>
+                    </div>
+                </div>
+
+            <section class="hidden-item" >
+
+                <!-- Frame  and Rotate -->
+
+                <div class="card mt-3">
+                    <div class="card-header bg-warning text-white">
+                        Step 2: Select Frame Style
+                    </div>
+                    <div class="card-body">
+                        <p>Insert type: <a href="#">Forli</a></p>
+                        <p>Insert color: Traffic White 9016</p>
+                        <label><input type="checkbox"> Rotate grain direction</label>
+                        <div class="card-body">
+                            <button class="btn btn-primary" id="select-insert">Change </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Step 3  door Dimension  -->
+
+
+                <div class="card mt-3">
+                    <div class="card-header bg-warning text-white">
+                        Step 3: Door Dimension
+                    </div>
+                    <div class="card-body ">
+                    
+                        <label for="height">Height (inches)</label>
+                        <select id="height">
+                            <option>6"</option>
+                        </select>
+                        <label for="width">Width (inches)</label>
+                        <select id="width">
+                            <option>6"</option>
+                        </select>
+                    
+                    </div>
+                    <p m-2> For dimensions over 70” please contact us directly</p>
+                </div>
+
+
+
+
+                    <!-- Step 4 -->
+
+                    <div class="card mt-3">
+                        <div class="card-header bg-secondary text-white">
+                            Step 4: Select Frame Style
+                        </div>
+                        <div class="card-body">
+                            <h2>Hinges and Plates</h2>
+                            <label><input type="checkbox"> Hinges on every door</label>
+                            <input type="number" value="2">
+                        </div>
+                    </div>
+
+
+                    <!-- Step 5  -->
+
+                    <div class="card mt-3">
+                        <div class="card-header bg-secondary text-white">
+                            Step 5: Open Type
+                        </div>
+                        <div class="card-body">
+                            <h5>Mechanism</h5>
+                        <select name="mechanism-type">
+                            <option value="N/A">N/A</option>
+                            <option value="right">Right</option>
+                            <option value="left">Left</option>
+                            <option value="pull">Pull</option>
+                            <option value="down">Down</option>
+                            <option value="up">Up</option>
+                            <option value="slide">Slide</option>
+                        </select>
+                        </div>
+                    </div>
+
+
+                <!-- Step 6  -->
+
+                <div class="card mt-3 mb-5">
+                    <div class="card-header bg-secondary text-white">
+                        Step 6: Decorative Hardware
+                    </div>
+                    <div class="card-body">
+                        <h5>Decorative Hardware</h5>
+                        <button class="btn btn-primary " id="select-model">Select model</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+            <!-- Door preview Section   -->
+
+
+            <div class="col-md-4  ">
+                <div class="card  door-preview">
+                    <div class="card-header">
+                        Door Preview
+                    </div>
+                    <div class="card-body">
+                        <p>Please select Door Type and Door Insert to see the preview of the door you designed</p>
+                    </div>
+                </div>
+
+                <!-- Cart Add  -->
+
+
+                <section  class="cart-button" >
+
+                    <div class="container  mt-5" >
+                        <div class="product" >
+                          <div class="product-image">
+                                <img src="./assests/asset 1.jpeg" alt="">
+                          </div>
+                          <div class="product-details">
+                            <h3>Door</h3>
+                            <p class="price"> <span>&#8377;</span>  10.35</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                          </div>
+                        </div>
+                    </div>
+    
+
+                </section>
+
+                
+            </div>
+        </div>
+
+
+           
+
+    </div>
+
+
+
+    <!-- Alert Modal -->
+<!--  -->
+<section class="alert-box" >
+    <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertModalLabel"> </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select a Door Frame .</p>
+                    <div class="slide-container">
+                        <div class="row slide" id="alert-image-slider">
+                            <div class="col">
+                                <img src="./assests/asset 0.jpeg" alt="ALUMINUM FRAME" class="img-thumbnail">
+                                <p class="text-center">ALUMINUM FRAME</p>
+                            </div>
+                            
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="GLOSS LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">GLOSS LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="MATTE LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">MATTE LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 3.jpeg" alt="ACRYLIC" class="img-thumbnail">
+                                <p class="text-center">ACRYLIC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 4.jpeg" alt="VENE" class="img-thumbnail">
+                                <p class="text-center">VENE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 5.jpeg" alt="LAMINATE" class="img-thumbnail">
+                                <p class="text-center">LAMINATE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 6.jpeg" alt="SOLID WOOD" class="img-thumbnail">
+                                <p class="text-center">SOLID WOOD</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 0.jpeg" alt="GLASS" class="img-thumbnail">
+                                <p class="text-center">GLASS</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="PVC" class="img-thumbnail">
+                                <p class="text-center">PVC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="STEEL" class="img-thumbnail">
+                                <p class="text-center">STEEL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Image Slider inside Alert Modal -->
+                    <div id="second-slider" class="slide-container mt-3">
+                        <p>Please select a Door Color Frame .</p>
+                        <div class="row slide">
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="GLOSS LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">GLOSS LACQUERED PAINTED</p>
+                            </div>
+                            <!-- Add other images as needed -->
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="GLOSS LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">GLOSS LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="MATTE LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">MATTE LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 3.jpeg" alt="ACRYLIC" class="img-thumbnail">
+                                <p class="text-center">ACRYLIC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 4.jpeg" alt="VENE" class="img-thumbnail">
+                                <p class="text-center">VENE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 5.jpeg" alt="LAMINATE" class="img-thumbnail">
+                                <p class="text-center">LAMINATE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 6.jpeg" alt="SOLID WOOD" class="img-thumbnail">
+                                <p class="text-center">SOLID WOOD</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 0.jpeg" alt="GLASS" class="img-thumbnail">
+                                <p class="text-center">GLASS</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 1.jpeg" alt="PVC" class="img-thumbnail">
+                                <p class="text-center">PVC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/asset 2.jpeg" alt="STEEL" class="img-thumbnail">
+                                <p class="text-center">STEEL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-select " id="select-btn" data-dismiss="modal" aria-label="Close">Select</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section> 
+
+
+<!-- alert model for Model Change  -->
+
+<div class="modal fade" id="alertModal-section" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="alertModalLabel"> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please select a Door Frame .</p>
+                <div class="slide-container">
+                    <div class="radio-buttons d-flex justify-content-around">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
+                            <label class="form-check-label" for="option1">
+                                Handle
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+                            <label class="form-check-label" for="option2">
+                                Nob 
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
+                            <label class="form-check-label" for="option3">
+                                Pulls
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
+                            <label class="form-check-label" for="option4">
+                               Allumunim Door Handle
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="options" id="option5" value="option4">
+                            <label class="form-check-label" for="option5">
+                                Integrated
+                            </label>
+                        </div>
+                    </div>
+                   
+                </div>
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-select " id="select-btn" data-dismiss="modal" aria-label="Close">Select</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Alert  Select Frame  -->
+
+
+
+<div class="modal fade" id="alertModal2-section" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="alertModalLabel"> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please select a Door Frame .</p>
+                <div class="slide-container">
+                        <div class="row slide" id="alert-image-slider">
+                            <div class="col">
+                                <img src="./assests/26.jpg" alt="ALUMINUM FRAME" class="img-thumbnail">
+                                <p class="text-center">ALUMINUM FRAME</p>
+                            </div>
+                            
+                            <div class="col">
+                                <img src="./assests/33.jpg" alt="GLOSS LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">GLOSS LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/26.jpg" alt="MATTE LACQUERED PAINTED" class="img-thumbnail">
+                                <p class="text-center">MATTE LACQUERED PAINTED</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/33.jpg" alt="ACRYLIC" class="img-thumbnail">
+                                <p class="text-center">ACRYLIC</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/26.jpg" alt="VENE" class="img-thumbnail">
+                                <p class="text-center">VENE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/33.jpg" alt="LAMINATE" class="img-thumbnail">
+                                <p class="text-center">LAMINATE</p>
+                            </div>
+                            <div class="col">
+                                <img src="./assests/26.jpg" alt="SOLID WOOD" class="img-thumbnail">
+                                <p class="text-center">SOLID WOOD</p>
+                            </div>
+                            
+                        </div>
+                   
+                </div>
+
+             
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-select " id="select-btn-frame" data-dismiss="modal" aria-label="Close">Select</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Add to cart Section  -->
+
+<section class="cart-section " >
+        <div class="container mt-5 ">
+            <div class="row">
+        
+            <!-- shopping Details  -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            Shoping Cart
+                        </div>
+                        <div class="card-body slide-container">
+                            <div class="row slide">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col-md-2">S.No</th>
+                                    <th scope="col"></th>    
+                                    <th scope="col"></th>    
+                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Dimension</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Quality</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">price</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+        
+        
+        
+        
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>                          
+                                    <td></td>
+                                    <td></td>
+                                    <td>Mark</td>
+                                
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>                          
+                                    <td></td>
+                                    <td></td>
+                                    <td>Jacob</td>
+                            
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td></td>                          
+                                    <td></td>
+                                    <td></td>
+                                    <td>Larry</td>
+                                    
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+        
+           
+                      <!-- discount Section  -->
+
+
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="card">
+                                        <div class="card-header bg-warning text-white">
+                                            Your Discount
+                                        </div>
+                                        <div class="card-body slide-container">
+                                                
+                                            <div class="row slide">
+                                                <table class='table'>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Column 1</th>
+                                                            <th>Column 2</th>
+                                                            <th>Column 3</th>
+                                                            <th>Column 4</th>
+                                                            <th>Column 5</th>
+                                                            <th>Column 6</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>Row 1</td>
+                                                                <td>Row 11</td>
+                                                                <td>Row 11 1</td>
+                                                                <td>Row 11 11</td>
+                                                                <td>Row 11 11 1</td>
+                                                                <td>Row 11 11 11</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Row 2</td>
+                                                                <td>Row 22</td>
+                                                                <td>Row 22 2</td>
+                                                                <td>Row 22 22</td>
+                                                                <td>Row 22 22 2</td>
+                                                                <td>Row 22 22 22</td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                
+                                </div>
+                
+                                <div class="col-md-4 mb-2">
+                                    <div class="card">
+                                      
+                                        <div class="card-header bg-warning text-white">
+                                            You Save
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <p>sub Total : <span>&#8377;</span> 350</p>
+
+                                            <p>Shoping:  <span>&#8377;</span> 50</p>
+                                            <p>Zip Code  :  201301 </p>
+                                            <p>Total  :<span>&#8377;</span> 400 </p>
+                                           
+                
+
+                
+                                            <p  class="mt-2" >
+                                                NOTE: If ordering up to 5 doors - please contact us for accurate shipping cost.
+                                                    *Shipping charges include 'Handling and Packaging' fees
+                                            </p>
+                
+                
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+        
+            </div>
+                
+                    
+            </div>
+        </div>
+
+
+        <!-- Order Form All information of the Table  -->
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header bg-warning text-white">
+                        Order Form
+                        </div>
+                        <div class="card-body slide-container">
+                            
+                            <form class="mt-2" > 
+                                <div class="form-row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Comapny Name">
+                                </div>
+                                
+                                </div>
+                            </form>
+                        
+                        
+                            <form class="mt-2">
+                                <div class="form-row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Country">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="State">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Zip code ">
+                                </div>
+                                
+                                </div>
+                            </form>
+                        
+                            
+                            <form class="mt-2" >
+                                <div class="form-row">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Address Line ">
+                                </div>
+                                </div>
+                            </form>
+                            
+                        
+                            <form  class="mt-2" >
+                                <div class="form-row">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="phone" class="form-control" placeholder="Phone">
+                                </div>
+                                
+                                
+                                </div>
+                            </form>
+                            
+                            <form action="/upload" method="post" enctype="multipart/form-data" class="mt-2">
+                                <div class="mt-2" >
+                                <label for="fileUpload">Attach file :</label>
+                                </div> 
+                                
+                                <div  class="mt-2">
+                                <input type="file" id="fileUpload" name="fileUpload"  >
+                                </div>
+
+                                <div  class="mt-2">
+                                <input type="file" id="fileUpload" name="fileUpload">
+                                </div>
+                                
+                                <div  class="mt-2">
+                                <input type="file" id="fileUpload" name="fileUpload">
+                                </div>
+
+                                    <input type="reset" value="Reset">
+                            </form>
+                        
+
+
+                            <div class=" mt-2">
+                            <div class="form-floating col-md-12">
+                                <label for="floatingTextarea2">Comments</label>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header bg-warning text-white">
+                            Shipping 
+                        </div>
+                        <div class="card-body">
+                                <form>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="country">
+                                    </div>
+                                    <div class="col-md-6">
+                                    <input type="phone" class="form-control" placeholder="State">
+                                    </div>
+
+                                </div>
+                                </form>
+
+                                <form class="mt-3">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="City ">
+                                    </div>
+                                    <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Zip code">
+                                    </div>
+
+                                </div>
+                                </form>
+
+                                <form class="mt-3" >
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Address Line">
+                                    </div>
+                                    
+                                </div>
+                                </form>
+
+                            <p  class="mt-2" >
+                            NOTE: If ordering up to 5 doors - please contact us for accurate shipping cost.
+                                *Shipping charges include 'Handling and Packaging' fees
+                            </p>
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Payment Gatway  -->
+
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-warning text-white">
+                        Payment
+                        </div>
+                        <div class="card-body slide-container">
+                            
+                        <div class="card-body slide-container">
+                            <div class="row slide">
+                                <div class="col payment">
+                                    <img src="./assests/mc.jpg" alt="Master Card" class="img-thumbnail">
+                                    <p class="text-center">Mater Card</p>
+                                </div>
+
+                                <!-- Add other images as needed -->
+                                <div class="col payment">
+                                    <img src="./assests/pp.jpg" alt="Pay Pal" class="img-thumbnail">
+                                    <p class="text-center">Pay Pal</p>
+                                </div>
+                                <div class="col payment">
+                                    <img src="./assests/visa.jpg" alt="Visa" class="img-thumbnail">
+                                    <p class="text-center">Visa</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+            </div>
+                <div  class="col-md-12">
+                            
+                    <div class="card-header bg-warning text-white">
+                    <button type="button" class="btn btn-primary" >Checkout</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+    <!-- JavaScript -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+ 
+
+
+</body>
+</html>

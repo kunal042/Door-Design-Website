@@ -1,0 +1,145 @@
+.slide-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.slide .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.img-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+.img-thumbnail.active {
+    background-color: #0f0f0f;
+}
+.card-header {
+    text-align: center;
+}
+.text-center {
+    white-space: normal;
+}
+.slide-container::-webkit-scrollbar {
+    display: none;
+}
+.modal-dialog {
+    max-width: 50%;
+}
+.modal-content {
+    padding: 20px;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+    display: flex;
+    justify-content: center; /* Center the footer content */
+}
+#second-slider {
+    display: none;
+}
+.btn-select {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+}
+.btn-select:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}
+
+/* All hidden items  */
+
+.cart-button{
+    display: none;
+}
+
+.alert-box{
+    display: block;
+}
+
+
+.hidden-item{
+    display: none;
+}
+
+.cart-section{
+    display: none;
+}
+
+.alert{
+    display: none;
+}
+
+.frame{
+    display: none;
+}
+
+
+
+/* cart Css  */
+
+body {
+    font-family: sans-serif;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    }
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    }
+
+.product-details {
+    margin-top: 10px;
+    }
+
+.product-details h3 {
+    margin-top: 0;
+    }
+
+.product-details .price {
+    font-weight: bold;
+    }
+
+.product-details .add-to-cart {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .payment img{
+    width: 100%;
+    height: 50%;
+} */
